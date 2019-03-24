@@ -1,0 +1,62 @@
+/* Extra small devices (phones, 600px and down) */
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100vw;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#main-container {
+    margin: 0 auto 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #main-container {
+        width: 100%;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #main-container {
+        width: 100%;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #main-container {
+        width: 100%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #main-container {
+        width: 100%;
+        max-width: 700px;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #main-container {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+
+#main-container > a {
+    color: #000;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#main-container > a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+#main-container > a:hover {
+    text-decoration: underline;
+}
