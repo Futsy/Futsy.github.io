@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Overlay example</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <script src="overlay.min.js"></script>
+    </head>
+    <body style="font-family: 'Shadows Into Light', cursive;">
+        <input type="text" placeholder="Some text..." id="input-id">
+        <div id="div-id">Some more text</div>
+        
+        <script>
+            setTimeout(() => {
+                window.overlayTutorial.addElement(document.getElementById('input-id'), 'This is an input field');
+                window.overlayTutorial.addElement(document.getElementById('div-id'), 'This is a div');
+                window.overlayTutorial.enableOverlay();
+            }, 5000);
+        </script>
+    </body>
+</html>
