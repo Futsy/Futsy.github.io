@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>XKCD</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+        <style>
+            html, body {
+                margin: 0;
+                font-family: Poppins,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+                text-align: center;
+                font-size: 18px;
+            }
+            #header {
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            xkcd
+        </div>
+        <div>
+            In deze opdracht bouwen we <a href="https://xkcd.com" target="_blank">xkcd</a> na.
+        </div>
+        <div>
+            Omdat de gehele site wat veel zou zijn werken we aan het stuk dat de stripjes weergeeft.
+        </div>
+        <div style="margin-bottom: 40px;">
+            e.g.
+        </div>
+        <div style="background: #96A8C8; padding-top: 20px; padding-bottom: 10px;">
+            <img src="snip.PNG" alt="xkcd website snippet showing a cartoon." title="Snippet from xkcd.">
+        </div>
+        <div style="margin-top: 50px;">
+            Hulp SCSS voor de styling (nog wel even auto formatten):
+        </div>
+        <div>
+            <br>
+            html, body {
+                margin    : 0;
+                background: #96A8C8;
+            }
+            .main-container {
+                background   : white;<br>
+                border       : 1.5px solid #071419;
+                border-radius: 12px;
+
+                .button {
+                    background: #6E7B91;
+                    color     : #FFF;
+                    border    : 1.5px solid #333;<br>
+                    box-shadow: 0 0 5px 0 grey;
+
+                    &:hover {
+                        background: white;
+                        color: #6E7B91;
+                    }
+                }
+            }
+            <br>
+            <br>
+        </div>
+        <div>
+            Om de strips op te halen gebruik je de API die wordt aangeboden door xkcd:
+        </div>
+        <div style="margin-bottom: 40px;">
+            <a href="https://xkcd.com/json.html" alt="xkcd API link" target="_blank">xkcd api</a>
+        </div>
+        <div style="background: #96A8C8; padding-top: 10px; padding-bottom: 10px; font-size: 0.8rem;">
+            <div style="font-family: 'Shadows Into Light', cursive; font-size: 2rem;">
+                Requirements
+            </div>
+            <div>
+                De applicatie haalt de afbeeldingen op via de xkcd API.
+            </div>
+            <div>
+                Als je de afbeelding hovered krijg je de tooltip tekst te zien ("alt" attribuut).
+            </div>
+            <div>
+                Random laat een random bestaande cartoon zien.
+            </div>
+            <div>
+                Als je voorbij de nieuwste klikt ga je terug naar de nieuwste.
+            </div>
+            <div>
+                Routing sluit aan op het xkcd nummer (localhost:4200/2484 mapt naar cartoon 2484).
+            </div>
+            <div>
+                Als de routing niet resolved ga je naar de nieuwste image.
+            </div>
+            <div>
+                De knoppen werken allemaal! (kijk op de site wat ze doen)
+            </div>
+            <div>
+                De "permanent" link wordt gemaakt voor je eigen website.
+            </div>
+            <div>
+                Bonus: de image url voor hotlinking/embedding.
+            </div>
+            <div style="margin-bottom: 30px;">
+                Bonus: Unit testen >_>
+            </div>
+        </div>
+    </body>
+</html>
