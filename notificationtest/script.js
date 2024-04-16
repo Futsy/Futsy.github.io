@@ -9,7 +9,10 @@ function askNotificationPermission() {
         console.log(permission);
         if (permission === "granted") {
             setTimeout(() => {
-                const notification = new Notification("To do list");
+                // const notification = new Notification("To do list");
+                registration.showNotification("Hello World", {
+                    body: "My first notification on iOS",
+                  });
             }, 10000);
             
         }
